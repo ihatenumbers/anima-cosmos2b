@@ -2,6 +2,9 @@
 FROM runpod/worker-comfyui:5.7.1-base
 
 WORKDIR /comfyui
+
+RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
+
 RUN git config --global --add safe.directory /comfyui && \
     git checkout master && \
     git pull
