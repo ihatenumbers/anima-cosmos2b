@@ -1,5 +1,5 @@
 # clean base image containing only comfyui, comfy-cli and comfyui-manager
-FROM runpod/worker-comfyui:5.5.1-base
+FROM runpod/worker-comfyui:5.7.1-base
 
 # install custom nodes into comfyui (first node with --mode remote to fetch updated cache)
 # (no custom registry nodes were provided in the workflow)
