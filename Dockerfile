@@ -1,6 +1,10 @@
 # clean base image containing only comfyui, comfy-cli and comfyui-manager
 FROM runpod/worker-comfyui:5.7.1-base
 
+WORKDIR /comfyui
+RUN git pull
+RUN pip install --upgrade transformers sentencepiece
+
 # install custom nodes into comfyui (first node with --mode remote to fetch updated cache)
 # (no custom registry nodes were provided in the workflow)
 
