@@ -10,7 +10,7 @@ RUN git config --global --add safe.directory /comfyui && \
     git pull
 
 # Install updated dependencies required for Qwen/Anima
-RUN pip install --upgrade transformers sentencepiece protobuf
+RUN pip install --upgrade transformers sentencepiece protobuf comfy_aimdo
 # install custom nodes into comfyui (first node with --mode remote to fetch updated cache)
 # (no custom registry nodes were provided in the workflow)
 
