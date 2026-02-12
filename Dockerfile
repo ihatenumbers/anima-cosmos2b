@@ -2,9 +2,12 @@
 FROM runpod/worker-comfyui:5.7.1-base
 
 WORKDIR /comfyui
-RUN git pull
-RUN pip install --upgrade transformers sentencepiece
+RUN git config --global --add safe.directory /comfyui && \
+    git checkout master && \
+    git pull
 
+# Install updated dependencies required for Qwen/Anima
+RUN pip install --upgrade transformers sentencepiece protobuf
 # install custom nodes into comfyui (first node with --mode remote to fetch updated cache)
 # (no custom registry nodes were provided in the workflow)
 
