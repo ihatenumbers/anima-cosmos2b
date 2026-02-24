@@ -15,6 +15,7 @@ RUN pip install --upgrade transformers sentencepiece protobuf comfy_aimdo
 # (no custom registry nodes were provided in the workflow)
 
 # download models/loras into comfyui
+RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/mixed_styles_anima_v1-e25.safetensors --relative-path models/loras --filename aistyles.safetensors
 RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/skityomimas3.safetensors --relative-path models/loras --filename skityomimas3.safetensors
 RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/voidfork.safetensors --relative-path models/loras --filename voidfork.safetensors
 RUN comfy model download --url https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors --relative-path models/vae --filename qwen_image_vae.safetensors
