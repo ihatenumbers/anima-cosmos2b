@@ -20,7 +20,7 @@ RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/r
 RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/mixed_styles_anima_v1-e25.safetensors --relative-path models/loras --filename aistyles.safetensors
 RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/skityomimas3.safetensors --relative-path models/loras --filename skityomimas3.safetensors
 # RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/fdnt3.safetensors --relative-path models/loras --filename fdnt3.safetensors
-RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/fdnt5.safetensors --relative-path models/loras --filename fdnt5.safetensors
+RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/fdnt6.safetensors --relative-path models/loras --filename fdnt6.safetensors
 # RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/voidfork.safetensors --relative-path models/loras --filename voidfork.safetensors
 RUN comfy model download --url https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors --relative-path models/vae --filename qwen_image_vae.safetensors
 RUN comfy model download --url https://huggingface.co/circlestone-labs/Anima/resolve/main/split_files/diffusion_models/anima-preview.safetensors --relative-path models/diffusion_models --filename anima-preview.safetensors
