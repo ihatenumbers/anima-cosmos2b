@@ -25,7 +25,7 @@ RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/r
 # RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/voidfork.safetensors --relative-path models/loras --filename voidfork.safetensors
 # RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/lena5.safetensors --relative-path models/loras --filename lena5.safetensors
 RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/frostia2.safetensors --relative-path models/loras --filename frostia2.safetensors
-RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/violet.safetensors --relative-path models/loras --filename violet.safetensors
+RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/violet2.safetensors --relative-path models/loras --filename violet2.safetensors
 RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/sugita.safetensors --relative-path models/loras --filename sugita.safetensors
 RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/meowbah3.safetensors --relative-path models/loras --filename meowbah3.safetensors
 RUN comfy model download --url https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors --relative-path models/vae --filename qwen_image_vae.safetensors
