@@ -34,6 +34,7 @@ RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/r
 RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/lena5.safetensors --relative-path models/loras --filename lena5.safetensors
 RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/lena.safetensors --relative-path models/loras --filename lena.safetensors
 # RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/frostia2.safetensors --relative-path models/loras --filename frostia2.safetensors
+RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/shiori.safetensors --relative-path models/loras --filename shiori.safetensors
 RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/violet2.safetensors --relative-path models/loras --filename violet2.safetensors
 RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/sugita.safetensors --relative-path models/loras --filename sugita.safetensors
 RUN comfy model download --url https://huggingface.co/Bakanayatsu/noobai-loras/resolve/main/meowbah3.safetensors --relative-path models/loras --filename meowbah3.safetensors
